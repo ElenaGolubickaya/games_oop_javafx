@@ -3,7 +3,7 @@ public class Win {
     public static boolean check(int[][] board) {
         boolean rsl = false;
         for (int i = 0; i < board.length; i++) {
-            if (board[i][i] == 1 && winRow(board, i) || winCell(board, i)) {
+            if (board[i][i] == 1 && (winRow(board, i) || winCell(board, i))) {
                 rsl = true;
                 break;
             }
